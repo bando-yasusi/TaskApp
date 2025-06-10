@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7EC50C722DF809D00046BE99 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC50C712DF809D00046BE99 /* Task.swift */; };
 		D2DB63638392853A94B00303 /* Pods_TaskApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB550FC9830B2D31E83C75E /* Pods_TaskApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -14,6 +15,7 @@
 		5C1C6A5B31A407369D23F2F4 /* Pods-TaskApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskApp.release.xcconfig"; path = "Target Support Files/Pods-TaskApp/Pods-TaskApp.release.xcconfig"; sourceTree = "<group>"; };
 		6DB550FC9830B2D31E83C75E /* Pods_TaskApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaskApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E58B1A52DF7B2E300F39079 /* TaskApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EC50C712DF809D00046BE99 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		BBB26E9862332654C7B09735 /* Pods-TaskApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskApp.debug.xcconfig"; path = "Target Support Files/Pods-TaskApp/Pods-TaskApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -53,6 +55,7 @@
 		7E58B19C2DF7B2E300F39079 = {
 			isa = PBXGroup;
 			children = (
+				7EC50C712DF809D00046BE99 /* Task.swift */,
 				7E58B1A72DF7B2E300F39079 /* TaskApp */,
 				7E58B1A62DF7B2E300F39079 /* Products */,
 				7EEE27996F247DAAE0BBC957 /* Pods */,
@@ -201,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EC50C722DF809D00046BE99 /* Task.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
