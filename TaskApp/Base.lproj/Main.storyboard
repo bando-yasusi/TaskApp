@@ -75,7 +75,7 @@
         <!--Input View Controller-->
         <scene sceneID="RAo-YH-0Hv">
             <objects>
-                <viewController id="t5p-Qo-UE7" customClass="inputViewController" customModule="TaskApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="t5p-Qo-UE7" customClass="InputViewController" customModule="TaskApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5WT-TN-iV5">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
