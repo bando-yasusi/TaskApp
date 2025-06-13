@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="S7O-gt-QJr">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <rect key="frame" x="0.0" y="193" width="393" height="625"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="8Os-8h-hTb" detailTextLabel="d9l-Nu-e2V" style="IBUITableViewCellStyleSubtitle" id="pqn-2o-HWa">
@@ -46,14 +46,44 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QFE-Rv-M58">
+                                <rect key="frame" x="30" y="139" width="141" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="キーワード検索が行えます" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2v-hM-dUd">
+                                <rect key="frame" x="10" y="112" width="191" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sa4-yR-JQH">
+                                <rect key="frame" x="287" y="138" width="56" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="解除"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H4H-WP-IQJ">
+                                <rect key="frame" x="201" y="138" width="56" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="検索"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="S7O-gt-QJr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8Ya-jT-OCV"/>
+                            <constraint firstItem="S7O-gt-QJr" firstAttribute="top" secondItem="Sa4-yR-JQH" secondAttribute="bottom" constant="20" id="Arz-0s-gWf"/>
+                            <constraint firstItem="Sa4-yR-JQH" firstAttribute="leading" secondItem="H4H-WP-IQJ" secondAttribute="trailing" constant="30" id="GDO-8h-5Qk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="S7O-gt-QJr" secondAttribute="bottom" id="MYC-UA-0Pv"/>
-                            <constraint firstItem="S7O-gt-QJr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="aON-Sz-iOd"/>
+                            <constraint firstItem="S7O-gt-QJr" firstAttribute="top" secondItem="QFE-Rv-M58" secondAttribute="bottom" constant="20" id="Obt-ar-xUg"/>
+                            <constraint firstItem="S7O-gt-QJr" firstAttribute="top" secondItem="H4H-WP-IQJ" secondAttribute="bottom" constant="20" id="XeG-9I-uAT"/>
+                            <constraint firstItem="S7O-gt-QJr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="aON-Sz-iOd"/>
+                            <constraint firstItem="H4H-WP-IQJ" firstAttribute="leading" secondItem="QFE-Rv-M58" secondAttribute="trailing" constant="30" id="go4-Cp-IqM"/>
+                            <constraint firstItem="QFE-Rv-M58" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="ibJ-W8-A2d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Sa4-yR-JQH" secondAttribute="trailing" constant="50" id="jTW-Dd-XrE"/>
+                            <constraint firstItem="H4H-WP-IQJ" firstAttribute="top" secondItem="v2v-hM-dUd" secondAttribute="bottom" constant="5" id="nTt-XR-Sje"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S7O-gt-QJr" secondAttribute="trailing" id="sBa-w7-aJY"/>
+                            <constraint firstItem="v2v-hM-dUd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="yhB-cc-Lid"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="I7e-TB-oKk">
