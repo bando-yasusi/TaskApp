@@ -17,6 +17,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.delegate = self
         tableView.dataSource = self
     }
+    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var searchButton: UIButton!
+    @IBOutlet weak var releaseButton: UIButton!
+    
+    
     // データの数（＝セルの数）を返すメソッド
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return taskArray.count
@@ -57,7 +62,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
             // データベースから削除する
             try! realm.write {
-                self.realm.delete(task)
+                self.realm.delete(self.taskArray[indexPath.row])
                 tableView.deleteRows(at: [indexPath], with: .fade)
             }
             
@@ -86,4 +91,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewWillAppear(animated)
         tableView.reloadData()
     }
+    
+    @IBAction func textField(_ sender: Any) {
+    }
+    @IBAction func searchButton(_ sender: Any) {
+    }
+    @IBAction func releaseButton(_ sender: Any) {
+    }
+    
 }
