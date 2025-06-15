@@ -16,6 +16,9 @@ class Task: Object {
     //カテゴリー
     @Persisted var category: String?
     
+    //ラベル追加
+    @Persisted var labels: String = ""
+    
     
 
 }

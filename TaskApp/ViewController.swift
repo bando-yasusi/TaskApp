@@ -4,8 +4,12 @@ import UserNotifications    // 追加
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var searchButton: UIButton!
+    @IBOutlet weak var releaseButton: UIButton!
+
     
-    //Realmインスタンスを取得する
+    //Realmインスタンスを取得する　
     let realm = try! Realm()
     // DB内のタスクが格納されるリスト。
     // 日付の近い順でソート：昇順
@@ -17,9 +21,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.delegate = self
         tableView.dataSource = self
     }
-    @IBOutlet weak var textField: UITextField!
-    @IBOutlet weak var searchButton: UIButton!
-    @IBOutlet weak var releaseButton: UIButton!
+
     
     
     // データの数（＝セルの数）を返すメソッド
@@ -94,9 +96,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBAction func textField(_ sender: Any) {
     }
+    //
     @IBAction func searchButton(_ sender: Any) {
+            let keyword = textField.text ?? ""
+            taskArray = realm.objects(Task.self)
+                .filter("category CONTAINS[c] %@", keyword)
+                .sorted(byKeyPath: "date", ascending: true)
+       
+            tableView.reloadData()
     }
     @IBAction func releaseButton(_ sender: Any) {
+        taskArray = try! Realm().objects(Task.self).sorted(byKeyPath: "date", ascending: true)
+            tableView.reloadData()
     }
     
 }

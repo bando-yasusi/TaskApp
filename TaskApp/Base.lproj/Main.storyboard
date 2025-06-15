@@ -87,6 +87,8 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="S7O-gt-QJr" secondAttribute="bottom" id="MYC-UA-0Pv"/>
                             <constraint firstItem="H4H-WP-IQJ" firstAttribute="leading" secondItem="QFE-Rv-M58" secondAttribute="trailing" constant="30" id="Mev-H1-62g"/>
                             <constraint firstItem="S7O-gt-QJr" firstAttribute="top" secondItem="QFE-Rv-M58" secondAttribute="bottom" constant="20" id="Obt-ar-xUg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v2v-hM-dUd" secondAttribute="trailing" constant="182" id="PFu-u7-Yjd"/>
+                            <constraint firstItem="v2v-hM-dUd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="9" id="Wqa-Bd-gVn"/>
                             <constraint firstItem="S7O-gt-QJr" firstAttribute="top" secondItem="H4H-WP-IQJ" secondAttribute="bottom" constant="20" id="XeG-9I-uAT"/>
                             <constraint firstItem="S7O-gt-QJr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="aON-Sz-iOd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Sa4-yR-JQH" secondAttribute="trailing" constant="30" id="jTW-Dd-XrE"/>
@@ -199,6 +201,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="4BJ-8L-ghU"/>
                     <connections>
+                        <outlet property="categoryTextField" destination="RXW-iw-rNp" id="jRx-61-CBQ"/>
                         <outlet property="contentsTextView" destination="yp2-47-GCX" id="BIh-gV-CSI"/>
                         <outlet property="datePicker" destination="Ut0-X4-j3F" id="g5b-9O-iWr"/>
                         <outlet property="titleTextField" destination="giL-LT-xWk" id="jSd-kt-GFy"/>
